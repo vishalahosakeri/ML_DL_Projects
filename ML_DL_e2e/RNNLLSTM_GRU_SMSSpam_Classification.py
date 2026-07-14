@@ -12,7 +12,7 @@ from mlxtend.plotting import plot_confusion_matrix
 import numpy as np
 import matplotlib.pyplot as plt
 
-file_path = r"/Users/sanvijanvi/Library/Mobile Documents/com~apple~CloudDocs/ML_DL_Projects/NLP/SMSSpamCollection.txt"
+file_path = r"../NLP/SMSSpamCollection.txt"
 
 spamMessages = pd.read_csv(file_path,sep="\t",names=["labels","message"])
 
