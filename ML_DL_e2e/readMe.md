@@ -11,6 +11,7 @@ End-to-end PyTorch projects covering the core supervised learning + deep learnin
 | `multiclassification_pytorch.py` | Multiclass classification | 4-class blob classification (`make_blobs`); softmax output, `long`-typed labels for `CrossEntropyLoss` |
 | `cnn_imageClassification.py` | Image classification | FashionMNIST; MLP baseline vs. CNN comparison, `DataLoader` batching, accuracy/confusion matrix via `torchmetrics` + `mlxtend` |
 | `RNNLLSTM_GRU_SMSSpam_Classification.py` | Sequence / text classification | BiLSTM SMS spam classifier — custom vocab (train-only), `pack_padded_sequence` for variable-length sequences, stratified split for class imbalance. **F1 ≈ 0.927** |
+|`Transformer_fromScratch/translation_model.py` | Sequence-to-sequence / Transformer | Full encoder-decoder Transformer implemented from scratch in PyTorch — token + positional embeddings, multi-head self-attention, encoder-decoder cross-attention, masked self-attention (decoder), feed-forward sublayers, residual connections, and layer normalization, following the "Attention Is All You Need" architecture |
 
 ## Getting started
 
