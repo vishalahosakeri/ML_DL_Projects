@@ -1,0 +1,107 @@
+{
+    "company": "TechNova Solutions",
+    "founded": 2015,
+    "headquarters": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "address": {
+        "street": "12 MG Road",
+        "zip": "560001",
+        "landmark": "Near Trinity Metro Station"
+      }
+    },
+    "departments": [
+      {
+        "name": "Engineering",
+        "head": "Ananya Rao",
+        "teams": [
+          {
+            "team_name": "Backend",
+            "members": 12,
+            "tech_stack": ["Java", "Spring Boot", "PostgreSQL"],
+            "current_projects": [
+              {
+                "project_id": "ENG-101",
+                "title": "Payment Gateway Revamp",
+                "status": "in_progress",
+                "priority": "high"
+              },
+              {
+                "project_id": "ENG-102",
+                "title": "API Rate Limiter",
+                "status": "completed",
+                "priority": "medium"
+              }
+            ]
+          },
+          {
+            "team_name": "AI/ML",
+            "members": 8,
+            "tech_stack": ["Python", "PyTorch", "LangChain", "HuggingFace"],
+            "current_projects": [
+              {
+                "project_id": "ML-201",
+                "title": "RAG-based Customer Support Bot",
+                "status": "in_progress",
+                "priority": "high",
+                "description": "Building a retrieval-augmented generation pipeline using document loaders, recursive character splitting, HuggingFace embeddings, and a vector store for semantic search over support documentation."
+              },
+              {
+                "project_id": "ML-202",
+                "title": "Sentiment Analysis Dashboard",
+                "status": "planning",
+                "priority": "low"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "head": "Vikram Mehta",
+        "teams": [
+          {
+            "team_name": "UX Research",
+            "members": 5,
+            "tech_stack": ["Figma", "Miro"],
+            "current_projects": [
+              {
+                "project_id": "PRD-301",
+                "title": "Onboarding Flow Redesign",
+                "status": "in_progress",
+                "priority": "medium"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "clients": [
+      {
+        "client_name": "GreenLeaf Retail",
+        "industry": "E-commerce",
+        "contract_value_usd": 250000,
+        "active": true,
+        "contacts": [
+          {"name": "Priya Sharma", "role": "CTO", "email": "priya@greenleaf.example.com"},
+          {"name": "Rahul Nair", "role": "Product Manager", "email": "rahul@greenleaf.example.com"}
+        ]
+      },
+      {
+        "client_name": "UrbanFit Fitness",
+        "industry": "Health & Wellness",
+        "contract_value_usd": 90000,
+        "active": false,
+        "contacts": [
+          {"name": "Sneha Kapoor", "role": "Founder", "email": "sneha@urbanfit.example.com"}
+        ]
+      }
+    ],
+    "company_values": [
+      "Customer obsession",
+      "Ship fast, learn faster",
+      "Radical transparency",
+      "Bias for data-driven decisions"
+    ]
+  }

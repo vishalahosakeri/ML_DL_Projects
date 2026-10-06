@@ -1,0 +1,28 @@
+ipykernel
+langchain == 1.4.0
+python-dotenv
+langchain_community
+pypdf
+arxiv
+unstructured
+langchain_text_splitters
+tiktoken
+bs4
+langchain_openai
+langchain_huggingface==1.2.2
+sentence-transformers==2.7.0
+transformers==4.41.2
+torch==2.2.2
+llvmlite==0.42.0
+numba==0.59.1
+faiss-cpu
+chromadb
+langchain-chroma
+langgraph
+tavily-python  
+langchain_tavily
+wikipedia
+langchain-groq == 1.1.3
+
+####
+bs4 #beautifulsoup

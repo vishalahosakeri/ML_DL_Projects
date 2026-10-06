@@ -15,7 +15,7 @@ X = torch.arange(start,end,step).unsqueeze(dim=1)
 y = weight * X + bias
 
 ## splitting data into training and test data
-
+    
 split = int(0.8 * len(X))
 x_train , y_train = X[:split],y[:split]
 x_test, y_test = X[split:],y[split:]

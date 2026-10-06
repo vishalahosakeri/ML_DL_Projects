@@ -6,3 +6,10 @@ __pycache__/
 *.pyc
 .DS_Store
 .ipynb_checkpoints/
+genAI_langchain_projects/langchain_langraph/langchain_langgraph/
+*.faiss
+*.pkl
+*.bin
+*.env
+*.sqlite3
+*.pickle

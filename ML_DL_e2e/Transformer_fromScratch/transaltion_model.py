@@ -233,9 +233,9 @@ epochs = 5
 for epoch in range(epochs):
     translateModel.train()
     train_loss = 0
-    
+    print(f"********** epoch :{epoch}")
     for batch,(encoder_input, decoder_input, target) in enumerate(train_data):
-        # print(f"{batch} id")
+            print(f"{batch} id")
         #padding mask 
             encoder_padding_mask = (encoder_input != eng_vocab["<PAD>"])
             decoder_padding_mask = (decoder_input != german_vocab["<PAD>"])
@@ -258,7 +258,7 @@ for epoch in range(epochs):
 
             train_loss += loss.item()
     
-    train_loss /= train_data
+    train_loss /= len(train_data)
     print(f"Train loss per bacth:{train_loss}",end=" ")
 
     #validation set 
@@ -267,6 +267,7 @@ for epoch in range(epochs):
     validation_loss = 0
     for batch,(encoder_input, decoder_input, target) in enumerate(validation_set):
         #padding mask 
+            print(f"{batch} id")
             encoder_padding_mask = (encoder_input != eng_vocab["<PAD>"])
             decoder_padding_mask = (decoder_input != german_vocab["<PAD>"])
             casual_mask = torch.tril(torch.ones((decoder_input.size(1),decoder_input.size(1)),dtype= torch.bool))
@@ -279,7 +280,7 @@ for epoch in range(epochs):
             loss = loss_fn(logits.permute(0,2,1),target)
             validation_loss += loss.item()
     
-    validation_loss /= validation_set
+    validation_loss /= len(validation_set)
     print(f"Validation loss per bacth:{validation_loss}")
 
 torch.save(translateModel.state_dict(), "transformer_checkpoint.pt")
