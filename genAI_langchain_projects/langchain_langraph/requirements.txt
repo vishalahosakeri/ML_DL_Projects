@@ -23,7 +23,13 @@ tavily-python
 langchain_tavily
 wikipedia
 langchain-groq == 1.1.3
+ddgs
 
 ####
 bs4 #beautifulsoup
 Ipython
+
+####
+mcp[cli]<2
+fastmcp
+langchain-mcp-adapters
